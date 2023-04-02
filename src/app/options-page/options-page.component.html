@@ -1,0 +1,14 @@
+<div class="wrapper">
+    <div class="card">
+        <h3 *ngIf="myReaction == 'happy'">What was good ?</h3>
+        <h3 *ngIf="myReaction == 'neutral'">What can be improved ?</h3>
+        <h3 *ngIf="myReaction == 'sad'">What did not go well ?</h3>
+        <div class="option-container" *ngFor="let item of options let i = index" [attr.id]="'item-' + i" (click)="newCLick($event.target)">
+            {{ item.name }}
+        </div>
+        <div class="submit-button">
+            <button type="button" class="btn btn-light skip" (click)="nextPage()">Skip</button>
+            <button type="button" class="btn continue" (click)="nextPage()">CONTINUE</button>
+        </div>
+    </div>
+</div>
