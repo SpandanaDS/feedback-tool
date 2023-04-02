@@ -48,14 +48,9 @@ export class OptionsPageComponent {
       var div= document.getElementById(id) as HTMLDivElement;
       if(div.classList.value== 'option-container'){
           div.classList.value = 'checked';
-          div.style.backgroundColor= '#ecc1f8';
-          div.style.border= '1px solid #ecc1f8';
-          div.style.borderRadius= '25px';
-          div.style.padding= '10px 18px';
-          div.style.margin= '5px 15px';
-          div.style.textTransform= 'capitalize';
-          div.style.fontFamily= 'Times New Roman';
-          div.style.fontSize= '17px';
+          div.style.backgroundColor= '#7ea2bd';
+          div.style.border= '1px solid #7ea2bd';
+          div.style.color= 'white';
           this.selectedItems.push(div.innerHTML);
       }
       else{
@@ -66,22 +61,15 @@ export class OptionsPageComponent {
         div.classList.value= 'unchecked';
         div.style.backgroundColor= 'white';
         div.style.border= '1px solid grey';
-        div.style.borderRadius= '25px';
-        div.style.padding= '10px 18px';
-        div .style.margin= '5px 15px';
-        div.style.textTransform= 'capitalize';
-        div.style.fontFamily= 'Times New Roman';
-        div.style.fontSize= '17px';
       }
+      div.style.borderRadius= '25px';
+      div.style.padding= '10px 18px';
+      div.style.margin= '5px 15px';
+      div.style.textTransform= 'capitalize';
+      div.style.fontFamily= 'Times New Roman';
+      div.style.fontSize= '17px';
+      div.style.fontWeight= '600';
       console.log(this.selectedItems);
     }
-    // var div = document.getElementById(id) as HTMLDivElement;
-    // if(div.classList.value == ''){
-    //   div.classList.value= 'checked';
-    // }
-    // else{
-    //   div.classList.value= 'unchecked';
-    // }
-    // console.log(div.classList.value);
   }
 }

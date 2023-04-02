@@ -6,7 +6,7 @@
     position:absolute;
     width: 100%;
     height: 100%;
-    background-color: #ecc1f8;
+    background-color: #223645;
 }
 h3{
     font-family: 'Times New Roman';
@@ -25,15 +25,11 @@ textarea{
     text-align: center;
     font-size: 80px;
     margin: 10px;
-    color: 	#6F2DA8;
+    color: 	#e12454;
 }
 .continue{
-    background-color: #6F2DA8;
-    border-color: #6F2DA8;
+    background-color: #e12454;
+    border-color: #e12454;
     color: white;
     font-weight: bold;
-}
-.continue:hover{
-    background-color: #ecc1f8;
-    border-color: #ecc1f8;
 }
